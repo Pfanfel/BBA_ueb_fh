@@ -1,0 +1,8 @@
+CMakeCXXCompilerId.o: \
+ build/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp
+main.o: src/main.cpp src/argparse.hpp src/ueb01.hpp src/ueb02.hpp \
+ src/util.hpp
+util.o: src/util.cpp src/util.hpp
+ueb01.o: src/ueb01.cpp src/ueb01.hpp src/util.hpp
+argparse.o: src/argparse.cpp src/argparse.hpp
+ueb02.o: src/ueb02.cpp src/ueb02.hpp src/ueb01.hpp src/util.hpp

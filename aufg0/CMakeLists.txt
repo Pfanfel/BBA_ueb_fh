@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.1) 
+project(bba)
+find_package(OpenCV REQUIRED core highgui imgproc imgcodecs)
+set(CMAKE_CXX_STANDARD 14)
+file(GLOB SOURCE_FILES src/*) # dies ist eine schlechte Idee – CMake kann nicht feststellen, ob Dateien fehlen
+add_executable(bba ${SOURCE_FILES})
+target_include_directories(bba PRIVATE ${OpenCV_INCLUDE_DIRS})
+target_link_libraries(bba ${OpenCV_LIBS})
+if(MSVC)
+  target_compile_options(bba PRIVATE /WX /W4 /wd4996 /we4018)
+elseif(UNIX)
+  target_compile_options(bba PRIVATE -Werror -Wall -Wextra -Wconversion -Wsign-conversion -Wsign-compare)
+else()
+  message(WARNING "Ich habe keine Ahnung, welcher Compiler dies ist. Extra Warnungen sind wahrscheinlich nicht aktiviert.")
+endif()
+# for enabling debug symbols, see https://stackoverflow.com/questions/7990844/#21478195

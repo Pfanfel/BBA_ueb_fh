@@ -1,0 +1,9 @@
+[
+    {
+        "title": "Ausgabe auf Standardausgabe",
+        "command": "{DUT} --input {IMGDIR}simple.pgm --output -",
+        "expect": {
+            "image": "{IMGDIR}simple.pgm"
+        }
+    }
+]

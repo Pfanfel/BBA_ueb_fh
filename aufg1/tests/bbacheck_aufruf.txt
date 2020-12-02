@@ -1,0 +1,1 @@
+python3 bbacheck.py --imgdir ./input/ --dut ../build/bba ./test01.json --expand

@@ -1,0 +1,3 @@
+/home/michi/Documents/BBA/bba_01/aufg3/build/CMakeFiles/rebuild_cache.dir
+/home/michi/Documents/BBA/bba_01/aufg3/build/CMakeFiles/edit_cache.dir
+/home/michi/Documents/BBA/bba_01/aufg3/build/CMakeFiles/bba.dir
