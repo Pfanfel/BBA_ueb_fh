@@ -7,6 +7,13 @@ Die Aufgeben wurden von Hermann Höhne erstellt.
 
 ---
 
+## Installation
+
+ *  Ubuntu Linux: `apt install libopencv-dev`
+ *  alle anderen: laden OpenCV 3.2.0 [hier](https://opencv.org/releases.html) herunter und folgen ansonsten den  offiziellen [Hinweisen](https://docs.opencv.org/3.2.0/df/d65/tutorial_table_of_content_introduction.html)
+
+---
+
 ## Aufgabe 0
 Einstieg in die Programmierung von
 bildorientierten Anwendungen in C++ mit OpenCV. Das Verarbeiten von
@@ -475,7 +482,7 @@ Es darf angenommen werden, dass alle Videos eine Bildrate von 25 verwenden.
     Beispielaufruf:
     
         bba --videoin test.avi --track 42 84 15 1 0 0 "Hier" --videoout track.avi
-        
+
 *  Mit Szenenwechseln im Video muss nicht gerechnet werden.
 
  *  Stabilisierung durch iterative Anpassung der Vorlage  
